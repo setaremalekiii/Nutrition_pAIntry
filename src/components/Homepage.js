@@ -39,7 +39,7 @@ function Homepage() {
       <img src={gifImage} alt="GIF" style={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)', width: '300px', height: '300px' }} />
 
       {/* End of centered GIF */}
-<Link to="/scanning">
+<Link to="/detect">
   <button 
     style={{ 
       padding: '10px 60px', // Adjust padding to make it shorter
