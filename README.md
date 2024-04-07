@@ -1,2 +1,2 @@
-# Nutrition_pAIntry
+# Nutrition_pAIntry🍇🍉🍒🍳🥚🥨🥐🥗🥙🥪
 **Nutrition pAIntry** is a web app where you can select your dietary restrictions/preferences in your profile and by simply scanning your pantry or fridge you get healthy recipes based on the available food items. The embedded computer vision application captures the available items in your fridge or pantry, couples it with your preferences or restrictions, and guides you toward delicious, healthy diets that utilize the ingredients you already have. No need for extra shopping, thinking, or struggles to figure out what to eat or how to use groceries that are going bad, just scan what you have quickly and **let the magic happen**! 🪄😎🪄
