@@ -37,75 +37,78 @@ function Profile() {
       backgroundRepeat: 'no-repeat',
       backgroundPosition: 'center',
       minHeight: '100vh', // Ensure the background covers the entire viewport
-      padding: '20px', // Add padding for better visibility of content
+      padding: '150px', // Add padding for better visibility of content
     }}>
-      {/* Cuisines */}
-      <div style={{ marginBottom: '20px' }}>
-        <h2>Cuisines</h2>
+       {/* Cuisines */}
+       <div style={{   marginTop: '10px', marginLeft: '750px',// Adjust this value to increase spacing from the top
+  marginBottom: '420px'}}>
         <form>
           {/* Checkboxes for cuisines */}
-          {/* Modify styles as needed */}
-          <label style={{ marginRight: '10px' }}>
+          <label style={{ marginRight: '40px', fontSize: '30px', color: 'white'  }}>
             <input type="checkbox" value="mexican" onChange={handleCuisineChange} /> Mexican
           </label>
-          <label style={{ marginRight: '10px' }}>
-            <input type="checkbox" value="japanese" onChange={handleCuisineChange} /> Japanese
-          </label>
-          <label style={{ marginRight: '10px' }}>
+          <label style={{ marginRight: '40px', fontSize: '30px', color: 'white' }}>
             <input type="checkbox" value="persian" onChange={handleCuisineChange} /> Persian
           </label>
-          <label style={{ marginRight: '10px' }}>
-            <input type="checkbox" value="italian" onChange={handleCuisineChange} /> Italian
+          <label style={{ marginRight: '40px', fontSize: '30px', color: 'white'  }}>
+            <input type="checkbox" value="Italian" onChange={handleCuisineChange} /> Italian
           </label>
-          <label style={{ marginRight: '10px' }}>
-            <input type="checkbox" value="chinese" onChange={handleCuisineChange} /> Chinese
+          <label style={{ marginRight: '40px', fontSize: '30px', color: 'white'  }}>
+            <input type="checkbox" value="Indian" onChange={handleCuisineChange} /> Indian
           </label>
+          <label style={{ marginRight: '40px', fontSize: '30px', color: 'white'  }}>
+            <input type="checkbox" value="japanese" onChange={handleCuisineChange} /> Japanese
+          </label>
+          {/* ... other labels */}
         </form>
       </div>
 
       {/* Spice Level */}
-      <div style={{ marginBottom: '20px' }}>
-        <h2>Spice Level</h2>
+      <div style={{  marginTop: '100px', marginLeft: '750px',// Adjust this value to increase spacing from the top
+  marginBottom: '320px' }}>
         <form>
           {/* Radio buttons for spice level */}
-          {/* Modify styles as needed */}
-          <label style={{ marginRight: '10px' }}>
-            <input type="radio" name="spiceLevel" value="mild" onChange={handleSpiceLevelChange} /> Mild
+          <label style={{ marginRight: '40px', fontSize: '30px', color: 'white'  }}>
+            <input type="checkbox" value="Mild Spicy" onChange={handleCuisineChange} /> Mild Spicy
           </label>
-          <label style={{ marginRight: '10px' }}>
-            <input type="radio" name="spiceLevel" value="medium" onChange={handleSpiceLevelChange} /> Medium
+          <label style={{ marginRight: '40px', fontSize: '30px', color: 'white' }}>
+            <input type="checkbox" value="Spicy" onChange={handleCuisineChange} /> Spicy
           </label>
-          <label style={{ marginRight: '10px' }}>
-            <input type="radio" name="spiceLevel" value="spicy" onChange={handleSpiceLevelChange} /> Spicy
+          <label style={{ marginRight: '40px', fontSize: '30px', color: 'white'  }}>
+            <input type="checkbox" value="Sweet" onChange={handleCuisineChange} /> Sweet
           </label>
+          <label style={{ marginRight: '40px', fontSize: '30px', color: 'white'  }}>
+            <input type="checkbox" value="Tangy" onChange={handleCuisineChange} /> Tangy
+          </label>
+          <label style={{ marginRight: '40px', fontSize: '30px', color: 'white'  }}>
+            <input type="checkbox" value="Simple" onChange={handleCuisineChange} /> Simple
+          </label>
+          {/* ... other labels */}
         </form>
       </div>
 
       {/* Dietary Restrictions */}
-      <div>
-        <h2>Dietary Restrictions</h2>
-        <form>
+      <div style={{  marginTop: '400px', marginLeft: '720px'// Adjust this value to increase spacing from the top
+  }}>        <form>
           {/* Checkboxes for dietary restrictions */}
-          {/* Modify styles as needed */}
-          <label style={{ marginRight: '10px' }}>
-            <input type="checkbox" value="vegetarian" onChange={handleDietaryRestrictionsChange} /> Vegetarian
+          <label style={{ marginRight: '40px', fontSize: '30px', color: 'white'  }}>
+            <input type="checkbox" value="Vegetarian" onChange={handleCuisineChange} /> Vegetarian
           </label>
-          <label style={{ marginRight: '10px' }}>
-            <input type="checkbox" value="vegan" onChange={handleDietaryRestrictionsChange} /> Vegan
+          <label style={{ marginRight: '40px', fontSize: '30px', color: 'white' }}>
+            <input type="checkbox" value="Vegan" onChange={handleCuisineChange} /> Vegan
           </label>
-          <label style={{ marginRight: '10px' }}>
-            <input type="checkbox" value="halal" onChange={handleDietaryRestrictionsChange} /> Halal
+          <label style={{ marginRight: '40px', fontSize: '30px', color: 'white'  }}>
+            <input type="checkbox" value="Halal" onChange={handleCuisineChange} /> Halal
           </label>
-          <label style={{ marginRight: '10px' }}>
-            <input type="checkbox" value="gluten-free" onChange={handleDietaryRestrictionsChange} /> Gluten Free
+          <label style={{ marginRight: '40px', fontSize: '30px', color: 'white'  }}>
+            <input type="checkbox" value="Gluten Free" onChange={handleCuisineChange} /> Gluten Free
           </label>
-          <label style={{ marginRight: '10px' }}>
-            <input type="checkbox" value="lactose-free" onChange={handleDietaryRestrictionsChange} /> Lactose Free
-          </label>
+          <label style={{ marginRight: '40px', fontSize: '30px', color: 'white'  }}>
+            <input type="checkbox" value="Nut-Allergies" onChange={handleCuisineChange} /> Allergies
+          </label>          {/* ... other labels */}
         </form>
       </div>
     </div>
   );
 }
-
 export default Profile;
