@@ -1,37 +1,65 @@
-import React from 'react';
-import { Link } from 'react-router-dom'; // Import Link from react-router-dom
-import backgroundImage from './second.png'; // Import your background image
+/* Scanning.css */
 
-function Smoothie() {
-  return (
-    <div style={{
-      backgroundImage: `url('${backgroundImage}')`, // Correct interpolation of the background image URL
-      backgroundSize: 'cover',
-      backgroundRepeat: 'no-repeat',
-      backgroundPosition: 'center',
-      minHeight: '100vh', // Ensure the background covers the entire viewport
-    }}>
-      <Link to="https://www.floatingkitchen.net/apple-pie-smoothie-bowl/" target="_blank" rel="noopener noreferrer">
-        <button 
-          style={{ 
-            padding: '10px 110px', // Adjust padding to make it shorter
-            fontSize: '16px', 
-            backgroundColor: '#ff4500', // Orange color for better visibility
-            color: 'transparent', // White text color
-            border: 'none', 
-            borderRadius: '30px', 
-            cursor: 'pointer',
-            position: 'absolute',
-            bottom: '100px',
-            left: '80%', // Move the button slightly to the left
-            transform: 'translateX(-50%)', // Center the button horizontally
-          }}
-        >
-            View
-        </button>
-      </Link>
-    </div>
-  );
-}
+.container {
+    background-image: url('./back.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+  }
+  .detected-items-list {
+    font-size: 35px; /* Set font size once */
+    color: #000000;
+    list-style: disc; /* To ensure bullet points are shown */
+    padding-left: 1050px; /* Adjust this to move items to the right */
+    margin-top: -400px; /* Adjust top margin as needed */
+    /* If you need to move the list more to the right, increase padding-left */
+  }
+  
+  .detected-items-list li {
+    margin-bottom: 10px; /* Spacing between items */
+  }
+  
+  /* Optionally, adjust the position of the entire list container */
+  /* If you need to move the list to the right */
+  .detected-items-list {
+    margin-left: 20px; /* Adjust to move the list right */
+  }
+ 
+  /* Other styles... */
+  
+  .action-button {
+    position: absolute;
+    z-index: 10;
+    left: 400px; /* Move the button closer to the left edge of the container */
+    bottom: 300px; /* Adjust as necessary */
+    transform: translateX(-50%);
+    padding: 15px 30px; /* Increase padding to make the button larger */
+    font-size: 20px; /* Increase font size for larger text */
+    cursor: pointer;
+    /* Additional styles for aesthetics */
+    background-color: #118d70; /* Example button color */
+    color: white; /* Text color */
+    border: none;
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: adds a shadow for better visibility */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+  }
+  
+  .action-button:hover {
+    background-color: #72baca; /* Darker shade when hovered for visual feedback */
+  }
 
-export default Smoothie;
+  .gifs-container {
+    display: flex;
+    justify-content: center; /* Center GIFs horizontally */
+    gap: 20px; /* Adjust the gap between GIFs */
+    margin-top: 20px; /* Space from the content above */
+  }
+  
+  .gifs-container img {
+    width: 280px; /* Adjust based on desired size */
+    height: auto; /* Maintain aspect ratio */
+    margin-top: 460px;
+  }
