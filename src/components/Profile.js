@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import backgroundImage from './profile.png'; // Import your background image
-
+import { Link } from 'react-router-dom';
 function Profile() {
   // State variables to track selected options
   const [selectedCuisines, setSelectedCuisines] = useState([]);
@@ -108,6 +108,25 @@ function Profile() {
           </label>          {/* ... other labels */}
         </form>
       </div>
+      <Link to="/">
+  <button 
+    style={{ 
+      padding: '25px 150px', // Adjust padding to make it shorter
+      fontSize: '16px', 
+      backgroundColor: 'grey', // Set background color to transparent
+      color: 'White', // Set text color to transparent
+      fontSize: '30px',
+      border: 'none', 
+      borderRadius: '5px', 
+      cursor: 'pointer',
+      position: 'absolute',
+      bottom: '-400px',
+      left: '50%', // Center the button horizontally
+      transform: 'translateX(-50%)', // Center the button horizontally
+    }}
+  >
+  Submit!</button>
+</Link>
     </div>
   );
 }
