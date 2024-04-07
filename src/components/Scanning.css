@@ -1,0 +1,19 @@
+/* Scanning.css */
+
+.container {
+    position: relative;
+    width: 800px;
+    margin: auto;
+  }
+  
+  .webcam, .canvas {
+    display: block;
+    margin: auto;
+  }
+  
+  .canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  
