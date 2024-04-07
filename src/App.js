@@ -4,6 +4,7 @@ import Homepage from './components/Homepage';
 import Scanning from './components/Scanning';
 import Hotdog from './components/Hotdog';
 import Smoothie from './components/Smoothie';
+import Profile from './components/Profile'
 
 import './App.css';
 
@@ -15,6 +16,8 @@ function App() {
         <Route path="/detect" element={<Scanning />} />
        <Route path="/second" element={<Smoothie />} /> {/* Page A component */}
        <Route path="/first" element={<Hotdog />} /> {/* Page B component */}
+       <Route path="/profile" element={<Profile />} /> {/* Page A component */}
+
       </Routes>
     </Router>
   );
