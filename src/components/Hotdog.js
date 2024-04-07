@@ -15,7 +15,7 @@ function Hotdog() {
       <Link to="https://cleanfoodcrush.com/zucchini-hot-dog-boats-clean-eating/" target="_blank" rel="noopener noreferrer">
         <button 
           style={{ 
-            padding: '10px 110px', // Adjust padding to make it shorter
+            padding: '55px 110px', // Adjust padding to make it shorter
             fontSize: '16px', 
             backgroundColor: 'transparent', // Orange color for better visibility
             color: 'transparent', // White text color
